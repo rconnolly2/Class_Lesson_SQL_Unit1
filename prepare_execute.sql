@@ -1,0 +1,5 @@
+--PREPARE EXECUTE DEALLOCATE 
+SET @sql_test = "SELECT * FROM empleado";
+PREPARE stmt FROM @sql_test;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
